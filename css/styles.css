@@ -1,0 +1,451 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-family: 'Gelion-Regular', sans-serif;
+}
+
+:root {
+    --secondary-color: #FB4C47;
+    --primary-color: #035755;
+    --white: #fff;
+    --grey: #4B4F51;
+    --pinky: #FFEAEA;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 122%;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 122%;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 124%;
+    /* or 36px */
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: 'Gelion-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 190%;
+    /* or 46px */
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin: 20px 0 30px 0;
+}
+
+p {}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Start Header Section */
+
+header {
+    background: #FFF8F8;
+}
+
+header .nav-bar {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar nav a {
+    color: var(--primary-color);
+    margin-left: 40px;
+    font-family: 'Gelion-Regular';
+    position: relative;
+}
+
+.nav-bar nav a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-bar nav a:hover:after {
+    content: '';
+    position: absolute;
+    background: var(--secondary-color);
+    top: 25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: calc( 50% - 3px);
+    cursor: pointer;
+}
+
+.nav-bar nav a.btn-link:hover:after {
+    content: unset;
+}
+
+.nav-bar nav .btn-link,
+.btn-link {
+    padding: 15px 45px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 46px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-family: 'Gelion-Medium';
+    text-transform: capitalize;
+}
+
+
+/* Start Covid Alert */
+
+.covid-alert .container {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.covid-alert .coved-alert-content {
+    margin-top: 230px;
+    width: 640px;
+}
+
+.covid-alert .coved-alert-content .btn-link {
+    margin-top: 50px;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.covid-alert .covid-cover-image {
+    background: url('../images/girl-couch.png');
+    background-size: contain;
+    height: 580px;
+    width: 800px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-top: 73px;
+}
+
+
+/* Start Corona Section */
+
+.corona {
+    background-image: url('../images/corona-layout.png');
+    background-size: cover;
+    height: 735px;
+}
+
+.corona .container {
+    width: 90%;
+    margin-left: 0;
+}
+
+.corona .corona-image {
+    width: 680px;
+}
+
+.corona .corona-image img {
+    width: 100%;
+}
+
+.corona .corona-content {
+    width: 650px;
+    margin-left: 100px;
+    align-self: flex-end;
+}
+
+.corona .corona-content p {
+    margin-bottom: 50px;
+}
+
+.corona .corona-content .btn-link {
+    background: rgba(250, 86, 82, 0.15);
+    color: var(--secondary-color);
+    border: 0px;
+    padding: 20px 40px;
+}
+
+.common-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Start Contagion Section */
+
+.contagion {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.contagion .aligned-section {
+    width: 570px;
+    margin: auto;
+}
+
+.aligned-section p {
+    font-family: 'Gelion-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 215%;
+    /* or 39px */
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contagion .contagion-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 110px;
+}
+
+.contagion-wrapper .card {
+    width: 400px;
+    background: var(--white);
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.contagion-wrapper .card:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.contagion .card h2 {
+    font-size: 36px;
+}
+
+.contagion .card p {
+    font-size: 18px;
+}
+
+
+/* Start Sumptomps  */
+
+.symptomps {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.symptomps .aligned-section {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/*  start What Should We Do Section */
+
+.procaution {
+    margin-top: 270px;
+}
+
+.procaution .container {
+    width: 90%;
+    margin: auto;
+}
+
+.procaution .aligned-section {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.procaution .common-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.procaution .common-step .step-content {
+    max-width: 533px;
+    text-transform: capitalize;
+}
+
+
+/* .procaution .common-step .step-content .step-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.procaution .common-step .step-content h2 {
+    position: relative;
+}
+
+.procaution .common-step .step-content h2 {
+    font-family: 'Gelion-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 147%;
+}
+
+.procaution .common-step .step-content .first:after,
+.procaution .common-step .step-content .second:after,
+.procaution .common-step .step-content .third:after,
+.procaution .common-step .step-content .forth:after {
+    position: absolute;
+    top: 5px;
+    left: -20%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--pinky);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 145%;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.procaution .common-step .step-content .first:after {
+    content: '01';
+}
+
+.procaution .common-step .step-content .second:after {
+    content: '02';
+}
+
+.procaution .common-step .step-content .third:after {
+    content: '03';
+}
+
+.procaution .common-step .step-content .forth:after {
+    content: '04';
+}
+
+.procaution .common-step .step-content p {
+    margin-top: 0;
+    font-family: 'Gelion-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 221%;
+    /* or 40px */
+    text-transform: capitalize;
+}
+
+.procaution .container:nth-child(even) {
+    width: 80%;
+}
+
+.procaution .container:nth-child(odd) {
+    width: 90%;
+}
+
+
+/* Start Map Section */
+
+footer {
+    background: #FFF8F8;
+    background-size: cover;
+}
+
+.subscribe {
+    margin-top: 150px;
+    padding-top: 150px;
+}
+
+.subscribe h2 {
+    text-align: center;
+}
+
+.subscribe .input-group {
+    max-width: 790px;
+    margin: 60px auto 0;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 57px;
+}
+
+.subscribe .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe .input-group input {
+    flex-grow: 1;
+    border: 0;
+    padding: 0 15px;
+    outline: none;
+}
+
+.subscribe .input-group .btn-link {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+footer .footer-section {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .footer-links {
+    max-width: 575px;
+    padding-left: 100px;
+}
+
+.footer-section .footer-links a {
+    margin-right: 40px;
+    color: var(--primary-color);
+}
+
+.footer-section .socila-media i {
+    margin-left: 40px;
+}
+
+.footer-section .socila-media i:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+footer p {
+    font-family: 'Gelion-Regular';
+    font-size: 18px;
+    line-height: 28px;
+    margin: 60px auto 0 auto;
+    max-width: 635px;
+    padding-left: 160px;
+    padding-bottom: 50px;
+}

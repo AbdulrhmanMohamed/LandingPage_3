@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Gelion-Medium';
+    src: url('Gelion Medium.eot');
+    src: url('Gelion Medium.eot?#iefix') format('embedded-opentype'), url('Gelion Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gelion-Medium';
+    src: url('../fonts/Gelion-Medium.svg#Gelion-Medium') format('svg'), url('../fonts/Gelion-Medium.ttf') format('truetype'), url('../fonts/Gelion-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gelion-Regular';
+    src: url('../fonts/Gelion-Regular.eot');
+    src: url('../fonts/Gelion-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Gelion-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gelion-Regular';
+    src: url('../fonts/Gelion-Regular.svg#Gelion-Regular') format('svg'), url('../fonts/Gelion-Regular.ttf') format('truetype'), url('../fonts/Gelion-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
